@@ -58,7 +58,7 @@ class Agenda
             cout<<"-------------------------"<<endl;
 
             list<Contacto>::iterator ite;
-                for(Contacto dato : ite=contactos.begin())
+                for(Contacto dato : ite)
                 {
                     cout << "Nombre:  " << dato->getNombre() << endl;
                     cout << "Telefono:  " << dato->getTelefono() << endl;
