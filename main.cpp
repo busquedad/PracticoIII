@@ -41,14 +41,14 @@ class Contacto
 class Agenda 
 {
     private:    
-        list <Contacto> contactos;
+        list <Contacto*> contactos;
     
     public:
         ~Agenda() {}
 
         void addContacto(Contacto* nContacto)
         {
-            contactos.push_back(*nContacto);
+            contactos.push_back(nContacto);
         }
 
         void listarContactos()
@@ -57,8 +57,7 @@ class Agenda
             cout<<"   Agenda de Contactos    "<<endl;
             cout<<"-------------------------"<<endl;
 
-            list<Contacto>::iterator ite;
-                for(Contacto dato : ite)
+                for(Contacto* dato : contactos )
                 {
                     cout << "Nombre:  " << dato->getNombre() << endl;
                     cout << "Telefono:  " << dato->getTelefono() << endl;
