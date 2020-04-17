@@ -61,7 +61,7 @@ class Agenda
                 {
                     cout << "Nombre:  " << dato->getNombre() << endl;
                     cout << "Telefono:  " << dato->getTelefono() << endl;
-                    cout << "Mail:  " << dato->getMAil() << endl;
+                    cout << "Mail:  " << dato->getMAil() << endl << endl;
                 }
 
             cout<<"-------------------------"<<endl;
@@ -86,5 +86,6 @@ int main()
 
         delete contacto;
         delete agenda;
+        cin.get();
         return 0;
 }
