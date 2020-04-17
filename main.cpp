@@ -15,11 +15,11 @@ class Contacto
 
         ~Contacto(){}
 
-        void setContacto(string nom, int tel, string mail)  
+        void setContacto(string nom, int tel, string mal)  
         {
             nombre = nom;
             telefono = tel;
-            mail = mail;
+            mail = mal;
         }
 
         string getNombre() 
@@ -30,11 +30,11 @@ class Contacto
         {
             return telefono;
         }
-        Contacto getContac (){
-            return Contacto();
-        }
         string getMAil(){
             return mail;
+        }
+        Contacto getContac (){
+            return Contacto();
         }
 };
 
